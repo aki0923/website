@@ -102,8 +102,9 @@ header nav ul li.btn a:hover,
 
 .hero--info h2{
     color: #E87D0E;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 800;
+    margin: 10px 0;
 }
 
 .hero--info h1{
@@ -200,12 +201,13 @@ header nav ul li.btn a:hover,
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 30px;
+    color:#FA8305 ;
 }
 
 .banner p{
     line-height: 170%;
     margin-bottom: 30px;
-    width: 550px;
+    width: 800px;
 }
 
 .banner img{
@@ -214,7 +216,7 @@ header nav ul li.btn a:hover,
 }
 
 .features{
-    background: url("/img/background\ pic.png") no-repeat center center fixed;
+    background: url("/img/wallpaperflare.com_wallpaper.jpg") no-repeat center center fixed;
     background-size: cover;
     padding: 80px 0;
 }
@@ -246,25 +248,25 @@ header nav ul li.btn a:hover,
 .features .info .block img{
     margin-bottom: 25px;
 }
+.features .info .block .lol{
+    width: 80px;
+}
 
 .projects{
     padding: 100px 0;
 }
 
 .projects h3{
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
-}
-
-.projects p{
     margin: 40px 0;
-    text-align: center;
 }
 
 .projects .images{
     display: flex;
     justify-content: space-around;
     margin-bottom: 25px;
+    
 }
 
 .see-all{
