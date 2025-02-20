@@ -24,15 +24,15 @@
         <div class="arrows">
             <p><a href="index.html" style="color: #FA8305;">Home</a> > Contact us</span></p>
         </div>
-        <h1>Lorem Ipsum is simply dummy text of the printing and.</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        <h1>We are spread all over the world.</h1>
+        <p>Supporting almost all living regions on the Earth. </p>
         <img src="img/map-contacts.png" alt="">
     </div>
     
     <div class="feedback">
         <div class="container">
-            <h2>Say hello</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing .</p>
+            <h2>Planning to have a deal with us?</h2>
+            <p>Fill the registration bar.</p>
             <form>
                 <div class="inline">
                     <div>
@@ -46,12 +46,34 @@
                 </div>
                 <label>Email Address</label>
                 <input type="email" class="one-line">
-
+            
                 <label>Message</label>
                 <textarea class="one-line"></textarea>
-          
+            
                 <button type="button">Get in touch</button>
+                <p class="error-message" style="color: red; display: none;">Please fill in all fields.</p>
             </form>
+            
+            <script>
+                document.querySelector("button").addEventListener("click", function() {
+                    let inputs = document.querySelectorAll("input, textarea");
+                    let errorMessage = document.querySelector(".error-message");
+                    let allFilled = true;
+            
+                    inputs.forEach(input => {
+                        if (input.value.trim() === "") {
+                            allFilled = false;
+                        }
+                    });
+            
+                    if (!allFilled) {
+                        errorMessage.style.display = "block";
+                    } else {
+                        errorMessage.style.display = "none";
+                        alert("Form submitted successfully!");
+                    }
+                });
+            </script>
         </div>
     </div>
 
