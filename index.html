@@ -15,8 +15,8 @@
             <ul>
                 <li class="active"> <a href="/">Home</a> </li>
                 <li><a href="/about.html">About us</a></li>
-                <li><a href="#">All our games</a></li>
-                <li><a href="#">News</a></li>
+                <li><a href="allGames.html">All our games</a></li>
+                
                 <li class="btn"><a href="contacts.html">Contacts</a></li>
             </ul>
         </nav>
@@ -33,22 +33,29 @@
     </div>
 
     <div class="container trending">
-        <a href="/about.html" class="see-all">SEE ALL</a>
+        <a href="/allGames.html" class="see-all">SEE ALL</a>
         <h3>Currently Trending Games</h3>
         
 
         <div class="games">
             <div class="block">
-                <img src="/img/Rectangle 23.png" alt="">
+                
+                <img src="/img/allgames1.jpg" alt="">
+                
             </div>
             <div class="block">
-                <img src="/img/Rectangle 24.png" alt="">
+                
+                <img src="/img/allgames3 (2).jpg" alt="">
+                
             </div>
             <div class="block">
-                <img src="/img/Rectangle 25.png" alt="">
+                
+                <img src="/img/allgames3 (1).jpg" alt="">
+                
             </div>
             <div class="block">
-                <img src="/img/Rectangle 26.png" alt="">
+                <img src="/img/allgames4.jpg" alt="">
+                
             </div>
         </div>
     </div>
@@ -111,8 +118,7 @@
         </div>
 
         <div class="container email">
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            
             <div class="block">
                 <div>
                     <h4>Stay in the loop</h4>
@@ -120,18 +126,20 @@
                         We promise not to spam you! </p>
                 </div>
                 <div>
-                    <input type="email" id="emailField" placeholder="Enter email address">
-                    <button onclick="checkEmail()">Continue</button>
+                    <a href="registration.html">
+                        <button>Continue</button>
+                    </a>
+                    
                 </div>
             </div>
         </div>
     </div>
-
+         
     <footer>
         <div class="blocks container">
             <div>
-                <span class="logo">logo</span>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <span class="logo">Columbia Games</span>
+                <p>We create not just games, but stories that stay in the memory for a long time.</p>
             </div>
             <div>
                 <h4>About us</h4>
@@ -144,28 +152,14 @@
             </div>
             <div>
                 <h4>Contact us</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                <p>+908 89097 890</p>
+                <p>lol</p>
+                <p>+996 702 236 265</p>
             </div>
         </div>
 
         <hr>
-        <p>Copyright ® 2025 Lorem All rights Rcerved</p>
+        <p>Copyright ® 2025 Columbia Games All Rights Recerved </p>
     </footer>
 
-    <script>
-        function checkEmail(){
-            let email = document.querySelector('#emailField').value;
-            if(!email.includes('@')){
-                alert("No symbol @");
-            }
-            else if(!email.includes('.')){
-                alert("No symbol .");
-            }
-            else{
-                alert("Everything is fine!");
-            }
-        }
-    </script>
 </body>
 </html>

@@ -9,13 +9,12 @@
 </head>
 <body> 
     <header class="container">
-        <span class="logo">logo</span>
+        <span class="logo">Columbia games</span>
         <nav>
             <ul>
                 <li> <a href="/">Home</a> </li>
                 <li><a href="/about.html">About us</a></li>
-                <li><a href="#">All our games</a></li>
-                <li><a href="#">News</a></li>
+                <li><a href="allGames.html">All our games</a></li>
                 <li class="btn"><a href="contacts.html">Contacts</a></li>
             </ul>
         </nav>
@@ -25,15 +24,15 @@
         <div class="arrows">
             <p><a href="index.html" style="color: #FA8305;">Home</a> > Contact us</span></p>
         </div>
-        <h1>Lorem Ipsum is simply dummy text of the printing and.</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        <h1>We are spread all over the world.</h1>
+        <p>Supporting almost all living regions on the Earth. </p>
         <img src="img/map-contacts.png" alt="">
     </div>
     
     <div class="feedback">
         <div class="container">
-            <h2>Say hello</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing .</p>
+            <h2>Planning to have a deal with us?</h2>
+            <p>Fill the registration bar.</p>
             <form>
                 <div class="inline">
                     <div>
@@ -47,12 +46,34 @@
                 </div>
                 <label>Email Address</label>
                 <input type="email" class="one-line">
-
+            
                 <label>Message</label>
                 <textarea class="one-line"></textarea>
-          
+            
                 <button type="button">Get in touch</button>
+                <p class="error-message" style="color: red; display: none;">Please fill in all fields.</p>
             </form>
+            
+            <script>
+                document.querySelector("button").addEventListener("click", function() {
+                    let inputs = document.querySelectorAll("input, textarea");
+                    let errorMessage = document.querySelector(".error-message");
+                    let allFilled = true;
+            
+                    inputs.forEach(input => {
+                        if (input.value.trim() === "") {
+                            allFilled = false;
+                        }
+                    });
+            
+                    if (!allFilled) {
+                        errorMessage.style.display = "block";
+                    } else {
+                        errorMessage.style.display = "none";
+                        alert("Form submitted successfully!");
+                    }
+                });
+            </script>
         </div>
     </div>
 
@@ -60,8 +81,8 @@
     <footer>
         <div class="blocks container">
             <div>
-                <span class="logo">logo</span>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <span class="logo">Columbia Games</span>
+                <p>We create not just games, but stories that stay in the memory for a long time.</p>
             </div>
             <div>
                 <h4>About us</h4>
@@ -74,13 +95,13 @@
             </div>
             <div>
                 <h4>Contact us</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                <p>+908 89097 890</p>
+                <p>lol</p>
+                <p>+996 702 236 265</p>
             </div>
         </div>
 
         <hr>
-        <p>Copyright ® 2025 Lorem All rights Rcerved</p>
+        <p>Copyright ® 2025 Columbia Games All Rights Recerved </p>
     </footer>
 
 </body>
