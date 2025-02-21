@@ -221,6 +221,12 @@ header nav ul li.btn a:hover,
     margin-bottom: 30px;
 }
 
+.features{
+    background: url("/img/wallpaperflare.com_wallpaper.jpg") no-repeat center center fixed;
+    background-size: cover;
+    padding: 80px 0;
+}
+
 .features h3, .features p{
     margin-bottom: 20px;
     text-align: center;
