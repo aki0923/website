@@ -112,11 +112,12 @@ header nav ul li.btn a:hover,
 
 .txt{
     font-weight: 600;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .heading{
     margin-top: 50px;
+    text-align: center;
 }
 
  .img{
@@ -139,7 +140,7 @@ header nav ul li.btn a:hover,
     transform: scale(1.1);
 }
 
-.trending .games{
+ .games{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -167,31 +168,21 @@ header nav ul li.btn a:hover,
     transform: scale(1.1);
 }
 
-.trending .games .Tblock p{
+ .games .block p{
     text-align: center;
-    font-size: 18px;
+    font-size: 17px;
     margin-top: 30px;
 }
 
-.trending .games .block{
+ .games .block{
     margin-top: 30px;
 }
 
 /* mobile */
 
-.list .block{
-    display: flex;
-    align-items: center; /* Выровнять по центру */
-    gap: 10px; 
-    margin-top: 30px;
-}
 
-.block p{
-    margin-left: 150px;
-    font-size: 35px;
-    font-weight: 600;
-}
 
+/* footer */
 
 footer{
     background: #000;

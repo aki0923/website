@@ -245,6 +245,14 @@ header nav ul li.btn a:hover,
     flex-wrap: wrap;
 }
 
+.features .container .info .block .arrow{
+    transition: all 500ms ease;
+}
+
+.features .container .info .block .arrow:hover{
+    transform: scale(1.5);
+}
+
 .features .info .block{
     text-align: center;
     width: 20%;
@@ -271,8 +279,14 @@ header nav ul li.btn a:hover,
 .projects .images{
     display: flex;
     justify-content: space-around;
-    margin-bottom: 25px;
     
+    margin-bottom: 25px;
+    width: 500px;
+    height: 300px;
+}
+
+.projects .images img{
+    padding: 10px;
 }
 
 .see-all{
