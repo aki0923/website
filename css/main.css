@@ -644,6 +644,7 @@ footer >p {
 .registration button:hover{
     background: #b01414;
 }
-
-
+.reg{
+    padding-top: 20px;
+}
 
