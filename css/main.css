@@ -595,56 +595,8 @@ footer >p {
 
 .registration {
     text-align: center;
-}
-
-.registration .header {
     background-color: #402f19;
-    padding: 20px;
-    font-size: 20px;
-    max-width: 483px;
-    border-radius: 10px;
-    margin-bottom: 40px;
 }
 
-.registration .block {
-    background: #322412;
-    margin-top: 15px;
-    padding-bottom: 20px;
-    border-radius: 10px;
-}
 
-.registration p {
-    font-size: 30px;
-    color: #dc7000;
-    font-weight: 500;
-    text-align: center;
-}
-
-.registration input {
-    width: 300px; /* Reduced width */
-    padding: 10px;
-    border-radius: 15px;
-    background: #797772;
-}
-
-.registration button{
-    background-color: #DC7000 ;
-    padding: 20px 60px;
-    margin-top: 25px;
-    border-radius: 10px;
-    border: 0;
-    cursor: pointer;
-    color: white;
-    transition: all 500ms ease;
-    font-size: 25px;
-    border-color: #000;
-    
-}
-
-.registration button:hover{
-    background: #b01414;
-}
-.reg{
-    padding-top: 20px;
-}
 

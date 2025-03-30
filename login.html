@@ -24,30 +24,24 @@
     </style>
 </head>
 <body>
-    <div class="arrows">
-        <p style="font-size: 15px; padding-bottom: 20px;"><a href="index.html" style="color: #FA8305; ">Home</a> > Login</span></p>
-    </div>
     
-<div class="registration">
-    <div class="header">
-    <h1>Columbia games login</h1>
-    </div>
-    <div class="blocks">
-    
+    <!-- Добавьте форму и атрибуты для полей ввода -->
+<form id="loginForm" class="blocks">
     <div class="block">
-        <p>Enter your email:</p>
-        <input id = "login" >
+      <p>Enter your email:</p>
+      <input type="email" id="email" name="email" required> <!-- Исправлено id и тип -->
     </div>
-        <div class="block">
-            <p>Enter your password:</p>
-            <input id = "password";>    
+    <div class="block">
+      <p>Enter your password:</p>
+      <input type="password" id="password" name="password" required> <!-- Добавлен тип password -->
     </div>
-        <div class="reg"><a href="registration.html" style="font-size: 20px;">Registration</a></div>
-        <button type= "submit" id= "submit">Submit</button>
-    
-</div>
-</div> 
-<script src="script.js"></script>
-
+    <div class="reg">
+      <a href="registration.html" style="font-size: 20px;">Registration</a>
+    </div>
+    <button type="submit" id="submit">Submit</button>
+  </form>
+  
+  <!-- Подключите отдельный скрипт для логина -->
+  <script src="js/login.js"></script>
 </body>
 </html>

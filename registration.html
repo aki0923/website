@@ -24,32 +24,23 @@
     </style>
 </head>
 <body>
-<div class="arrows">
-    <p style="font-size: 15px; padding-bottom: 20px;"><a href="index.html" style="color: #FA8305; ">Home</a> > Registration</span></p>
-</div>
-<div class="registration">
-    <div class="header">
-    <h1>Columbia games registration</h1>
-    </div>
-    <div class="blocks">
-    <div class="block">
-        <p>Enter your name:</p>
-        <input id = "name">
-    </div>
-    <div class="block">
-        <p>Enter your email:</p>
-        <input id = "login" >
-    </div>
-    <div class="block">
-        <p>Enter your password:</p>
-        <input id = "password";>
-    </div>
-    
-        <button type= "submit" id= "submit">Submit</button>
-    
-</div>
-</div> 
-<script src="script.js"></script>
-
+    <form id="registerForm" class="blocks">
+        <div class="block">
+          <p>Enter your name:</p>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="block">
+          <p>Enter your email:</p>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="block">
+          <p>Enter your password:</p>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+      
+      <!-- Подключите отдельный скрипт для регистрации -->
+      <script src="js/registration.js"></script>
 </body>
 </html>
