@@ -7,7 +7,7 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
     };
   
     try {
-      const response = await fetch('http://localhost:3000', {
+      const response = await fetch('http://localhost:3000/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
@@ -15,7 +15,9 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
       });
   
       if (response.ok) {
-        window.location.href = 'profile.html';
+        window.location.reload(); // Перезагрузить страницу
+
+        window.location.href = 'index.html';
       } else {
         const error = await response.json();
         showError(error.message || 'Ошибка авторизации');

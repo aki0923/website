@@ -8,7 +8,7 @@ document.getElementById('registerForm').addEventListener('submit', async (e) => 
     };
   
     try {
-      const response = await fetch('http://localhost:3000', {
+      const response = await fetch('http://localhost:3000/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
@@ -17,7 +17,9 @@ document.getElementById('registerForm').addEventListener('submit', async (e) => 
   
       if (response.ok) {
         alert('Регистрация успешна!');
-        window.location.href = 'login.html';
+        window.location.reload(); // Перезагрузить страницу
+
+        window.location.href = 'index.html';
       } else {
         const error = await response.json();
         showError(error.message || 'Ошибка регистрации');

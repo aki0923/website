@@ -25,7 +25,15 @@
                 <li><a href="about.html">About us</a></li>
                 <li><a href="allGames.html">All our games</a></li>
                 <li class=""><a href="contacts.html">Contacts</a></li>
-                <li class="btn"><a href="login.html">Registration/Login</a></li>
+                <li class="auth-section">
+                    <!-- Кнопка входа -->
+                    <a href="login.html" class="btn" id="authButton">Registration/Login</a>
+                    
+                    <!-- Аватарка (изначально скрыта) -->
+                    <a href="profile.html" id="userAvatar" style="display: none;">
+                      <img src="img/avatar.png" alt="User Avatar" class="avatar">
+                    </a>
+                  </li>
             </ul>
         </nav>
     </header>
@@ -183,6 +191,6 @@
         <hr>
         <p>Copyright ® 2025 Columbia Games All Rights Recerved </p>
     </footer>
-
+    <script src="js/auth.js"></script>
 </body>
 </html>
